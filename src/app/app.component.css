@@ -1,0 +1,32 @@
+table {
+    width: 100%;
+  }
+
+  .logo {
+      margin: 5px;
+  }
+
+  th.mat-sort-header-sorted {
+    color: black;
+  }
+
+  .mine{
+    position: fixed;
+      bottom: 40px;
+      right: 20px;
+      background-color: #579d2b;
+      color: #fff;
+  }
+
+
+  .center{
+    width: 94%;
+    margin: 2% auto;
+  }
+
+  .main-div{
+    height: 87vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
