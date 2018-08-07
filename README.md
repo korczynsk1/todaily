@@ -1,5 +1,7 @@
 # Todaily
 
+Progressive Web App hosted on Firebase. Application is using Google Sheets document as a data source.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
 
 ## Development server

@@ -36,9 +36,15 @@ export class AppComponent implements OnInit {
     this.dataSource.sort = this.sort;
     this.dataSource.paginator = this.paginator;
     this.data.getDaily().subscribe(res => {
-      this.dailies = res;
-      console.log(res);
-      this.dataSource.data = this.dailies.rows;
+      this.dailies = res['feed'].entry;
+      const datas = [];
+      this.dailies.forEach(function(x) {
+        const obj = <DailyElement>{};
+        obj.task = x.gsx$task.$t;
+        obj.priority = x.gsx$priority.$t;
+        datas.push(obj);
+      });
+      this.dataSource.data = datas;
     });
   }
 }

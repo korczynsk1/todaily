@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "todaily": "todaily-pwa",
+    "default": "todaily-pwa"
+  }
+}

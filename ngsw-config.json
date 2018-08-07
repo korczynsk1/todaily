@@ -27,7 +27,7 @@
   "dataGroups": [
     {
       "name": "dailies-api",
-      "urls": ["http://gsx2json.com/api?id=14xhbg6eu27x39OJXm0Kj-5SetZ2LBVZ2aHPk6qB7lpQ"],
+      "urls": ["https://gsx2json.com/api?id=14xhbg6eu27x39OJXm0Kj-5SetZ2LBVZ2aHPk6qB7lpQ"],
       "cacheConfig": {
         "strategy": "freshness",
         "maxSize": 20,

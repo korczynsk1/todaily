@@ -17,7 +17,11 @@ table {
       background-color: #579d2b;
       color: #fff;
   }
-
+  .navbar{
+    position: fixed;
+    top: 0px;
+    z-index: 2;
+  }
 
   .center{
     width: 94%;
