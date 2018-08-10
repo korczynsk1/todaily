@@ -1,33 +1,33 @@
 {
   "index": "/index.html",
-  "assetGroups": [{
-    "name": "app",
-    "installMode": "prefetch",
-    "resources": {
-      "files": [
-        "/favicon.ico",
-        "/index.html",
-        "/*.css",
-        "/*.js"
-      ],
-      "urls": [
-        "https://fonts.googleapis.com/**"
-      ]
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "resources": {
+        "files": ["/favicon.ico", "/index.html", "/*.css", "/*.js"],
+        "urls": [
+          "https://fonts.googleapis.com/**",
+          "https://task-apollo-server.herokuapp.com/graphql?query{tasks{id,task}}"
+        ]
+      }
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "resources": {
+        "files": ["/assets/**"]
+      }
     }
-  }, {
-    "name": "assets",
-    "installMode": "lazy",
-    "updateMode": "prefetch",
-    "resources": {
-      "files": [
-        "/assets/**"
-      ]
-    }
-  }],
+  ],
   "dataGroups": [
     {
       "name": "dailies-api",
-      "urls": ["https://gsx2json.com/api?id=14xhbg6eu27x39OJXm0Kj-5SetZ2LBVZ2aHPk6qB7lpQ"],
+      "urls": [
+        "https://gsx2json.com/api?id=14xhbg6eu27x39OJXm0Kj-5SetZ2LBVZ2aHPk6qB7lpQ",
+        "https://task-apollo-server.herokuapp.com/graphql?query{tasks{id,task}}"
+      ],
       "cacheConfig": {
         "strategy": "freshness",
         "maxSize": 20,
